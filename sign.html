@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Registration Form</h2>
+    <form id="registration-form" onsubmit="return validateForm()">
+      
+      <!-- Last Name -->
+      <div class="form-group">
+        <label for="last-name"></label>
+        <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+      </div>
+
+      <!-- First Name -->
+      <div class="form-group">
+        <label for="first-name"></label>
+        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+      </div>
+
+      <!-- Gender -->
+      <div class="form-group">
+        <label for="gender"></label>
+        <select id="gender" name="gender"  aria-placeholder="gender">
+          <option value=""></option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+
+    
+
+      <!-- Date of Birth -->
+      <div class="form-group">
+        <label for="dob"></label>
+        <input type="date" id="dob" name="dob" required placeholder="Select your date of birth">
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email"></label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="submit-btn">Register</button>
+    </form>
+
+    <!-- Login Link -->
+    <div class="login-link">
+      <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+    <div id="error-message" class="error-message"></div>
+  </div>
+
+  <div id="success-message" class="success-message" style="display: none;">
+    <p>Your login was successful! Welcome back!</p>
+  </div>
+
+    <div id="error-message" class=""></div>
+
+  <script src="sign.js"></script>
+</body>
+</html>
